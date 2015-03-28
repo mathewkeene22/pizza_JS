@@ -1,0 +1,17 @@
+.container {
+  width: 65%;
+  float: left;
+  padding: 8%;
+  margin: 10%;
+  background: rgba(48, 37, 37, 1);
+  border-radius: 5px;
+}
+
+.container h1, h2, h3, p {
+  color: white;
+
+}
+
+body {
+  background-image:url("img/pizza.jpeg");
+}
