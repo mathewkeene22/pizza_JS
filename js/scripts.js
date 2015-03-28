@@ -1,4 +1,4 @@
-var pizza = {
+var Pizza = {
   size: "",
   topping: "",
   price : function() {
@@ -18,6 +18,20 @@ var pizza = {
   } else if ( this.size === 18 && this.topping === "pepperoni" ) {
     return 18
   }
-
   }
 }
+
+$(document).ready(function() {
+  $("form#pizza").submit(function(event) {
+    event.preventDefault();
+
+    var newOrder = Object.create(Pizza)
+    var newSize = parseInt($("#new-size").val());
+    var newTopping = $("#topping").val();
+
+    newOrder.size = newSize;
+    newOrder.topping = newTopping;
+    var totalCost = newOrder.price();
+    $(".total").text(totalCost);
+  })
+})
