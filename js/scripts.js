@@ -1,6 +1,6 @@
 var pizza = {
-  size : "";
-  topping : "";
+  size: "",
+  topping: "",
   price : function() {
 //small
   if (this.size === 10 && this.topping === "cheese" ) {
@@ -15,9 +15,9 @@ var pizza = {
 //large
   } else if ( this.size === 18 && this.topping === "cheese" ) {
     return 16
-  } else ( this.size === 18 && this.topping === "pepperoni" ) {
+  } else if ( this.size === 18 && this.topping === "pepperoni" ) {
     return 18
   }
 
-  };
-};
+  }
+}
